@@ -1,0 +1,1 @@
+FROM adamaze/example-addon
