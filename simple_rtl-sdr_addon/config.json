@@ -13,8 +13,8 @@
   "options": {
     "log_level": "info",
     "my_var": 5,
-    "server": ""
-    "port": "1234"
+    "server": "",
+    "port": "1234",
     "serial_number": ""
   },
   "schema": {
