@@ -1,9 +1,9 @@
 {
-  "name": "example",
+  "name": "simple_rtl-sdr_addon",
   "version": "1.0.0",
-  "slug": "example",
-  "description": "Example add-on by adamaze",
-  "url": "https://github.com/adamaze/addon-example",
+  "slug": "simple_rtl-sdr_addon",
+  "description": "Simple rtl-sdr addon for testing",
+  "url": "https://github.com/adamaze/adam-hass-addons/tree/main/simple_rtl-sdr_addon",
   "init": false,
   "arch": [
     "amd64",
