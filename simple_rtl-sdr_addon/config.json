@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "slug": "example",
+  "description": "Example add-on by adamaze",
+  "url": "https://github.com/adamaze/addon-example",
+  "init": false,
+  "arch": [
+    "amd64",
+    "armv7",
+    "aarch64"
+  ],
+  "options": {
+    "log_level": "info",
+    "my_var": 5
+  },
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
+    "my_var": "int(1,120)"
+  }
+}
