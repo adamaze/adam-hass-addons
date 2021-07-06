@@ -1,6 +1,6 @@
 {
   "name": "simple_rtl-sdr_addon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "simple_rtl-sdr_addon",
   "description": "Simple rtl-sdr addon for testing",
   "url": "https://github.com/adamaze/adam-hass-addons/tree/main/simple_rtl-sdr_addon",
@@ -12,10 +12,16 @@
   ],
   "options": {
     "log_level": "info",
-    "my_var": 5
+    "my_var": 5,
+    "server": ""
+    "port": "1234"
+    "serial_number": ""
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
-    "my_var": "int(1,120)"
+    "my_var": "int",
+    "server": "str",
+    "port": "int",
+    "serial_number": "int"
   }
 }
