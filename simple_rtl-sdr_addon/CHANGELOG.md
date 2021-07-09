@@ -1,4 +1,8 @@
 
+### 1.0.4
+
+- remove sample stuff
+
 ### 1.0.3
 
 - use basio vars
