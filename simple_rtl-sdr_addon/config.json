@@ -5,6 +5,7 @@
   "description": "Simple rtl-sdr addon for testing",
   "url": "https://github.com/adamaze/adam-hass-addons/tree/main/simple_rtl-sdr_addon",
   "init": false,
+  "homeassistant_api": true,
   "arch": [
     "amd64",
     "armv7",
