@@ -1,6 +1,6 @@
 {
   "name": "simple_rtl-sdr_addon",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "slug": "simple_rtl-sdr_addon",
   "description": "Simple rtl-sdr addon for testing",
   "url": "https://github.com/adamaze/adam-hass-addons/tree/main/simple_rtl-sdr_addon",
@@ -16,11 +16,13 @@
     "server": "",
     "port": "1234",
     "serial_number": ""
+    "sensor_name": "house_power_usage"
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
     "server": "str",
     "port": "int",
     "serial_number": "int"
+    "sensor_name": "str"
   }
 }

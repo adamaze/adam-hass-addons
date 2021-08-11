@@ -1,3 +1,6 @@
+### 1.1.0
+
+- first version to actually attempt reporting to HA
 
 ### 1.0.4
 
