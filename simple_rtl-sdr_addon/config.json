@@ -15,14 +15,14 @@
     "log_level": "info",
     "server": "",
     "port": "1234",
-    "serial_number": ""
+    "serial_number": "",
     "sensor_name": "house_power_usage"
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
     "server": "str",
     "port": "int",
-    "serial_number": "int"
+    "serial_number": "int",
     "sensor_name": "str"
   }
 }
