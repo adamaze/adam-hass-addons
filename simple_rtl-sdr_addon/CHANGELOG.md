@@ -1,3 +1,8 @@
+
+### 1.1.1
+
+- bugfix
+
 ### 1.1.0
 
 - first version to actually attempt reporting to HA
