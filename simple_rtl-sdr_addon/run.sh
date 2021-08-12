@@ -13,7 +13,7 @@ function report_to_ha() {
 # loop forever
 while true; do
     # run rtlamr in 'single' mode so that it returns as soon as it gets data on $serial_number
-    consumption=$(/root/go/bin/rtlamr -filterid=$serial_number -format=json -server=$server:$port -single -filterid=$serial_number)
+    consumption=$(/root/go/bin/rtlamr -filterid=$serial_number -format=json -server=$server:$port -single -filterid=$serial_number |jq '.Message.Consumption')
     echo $(date) $serial_number $consumption
     # report that data to home assistant
     report_to_ha
