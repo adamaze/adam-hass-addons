@@ -8,4 +8,4 @@ ENV LANG C.UTF-8
 COPY run.sh /
 RUN chmod a+x /run.sh; apk add go; go get github.com/bemasher/rtlamr
 
-CMD [ "/bin/bash -x /run.sh" ]
+CMD [ "/run.sh" ]
