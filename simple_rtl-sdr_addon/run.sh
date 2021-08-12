@@ -8,7 +8,7 @@ echo "using rtlamr to connect to $server:$port listening for data from $serial_n
 #
 #
 function report_to_ha() {
-    curl -s -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}"   -H "Content-Type: application/json"   -d '{"state": "$consumption", "attributes": {"unit_of_measurement": "kWh"}}'   http://supervisor/core/api/states/sensor.$sensor_name
+    curl -s -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}"   -H "Content-Type: application/json"   -d "{\"state\": \"$consumption\", \"attributes\": {\"unit_of_measurement\": \"kWh\"}}"   http://supervisor/core/api/states/sensor.$sensor_name
 }
 # loop forever
 while true; do
