@@ -1,6 +1,6 @@
 {
   "name": "simple_rtl-sdr_addon",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "slug": "simple_rtl-sdr_addon",
   "description": "Simple rtl-sdr addon for testing",
   "url": "https://github.com/adamaze/adam-hass-addons/tree/main/simple_rtl-sdr_addon",

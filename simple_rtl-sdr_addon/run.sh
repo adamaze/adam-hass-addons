@@ -8,12 +8,12 @@ echo "using rtlamr to connect to $server:$port listening for data from $serial_n
 #
 #
 function report_to_ha() {
-    curl -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}"   -H "Content-Type: application/json"   -d '{"state": "$consumption", "attributes": {"unit_of_measurement": "kWh"}}'   http://supervisor/core/api/states/sensor.$sensor_name
+    curl -s -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}"   -H "Content-Type: application/json"   -d '{"state": "$consumption", "attributes": {"unit_of_measurement": "kWh"}}'   http://supervisor/core/api/states/sensor.$sensor_name
 }
 # loop forever
 while true; do
     # run rtlamr in 'single' mode so that it returns as soon as it gets data on $serial_number
-    consumption=$(/root/go/bin/rtlamr -filterid=$serial_number -format=json -server=$server:$port -single -filterid=$serial_number |jq '.Message.Consumption')
+    consumption=$(/root/go/bin/rtlamr -filterid=$serial_number -format=json -server=$server:$port -single -filterid=$serial_number 2>/dev/null | jq '.Message.Consumption')
     echo $(date) $serial_number $consumption
     # report that data to home assistant
     report_to_ha
